@@ -10,26 +10,26 @@ package dauquangloc_59131309_lophoc;
  * @author quang
  */
 public abstract class caNhan {
-    private string hoTen;
+    private String hoTen;
     private int tuoi;
-    private string diaChi;
-    private string sdt;
+    private String diaChi;
+    private String sdt;
     
     public caNhan(){}
 
-    public caNhan(string hoTen, int tuoi, string diaChi, string sdt) {
+    public caNhan(String hoTen, int tuoi, String diaChi, String sdt) {
         this.hoTen = hoTen;
         this.tuoi = tuoi;
         this.diaChi = diaChi;
         this.sdt = sdt;
     }
-    public abstract string hienThiTT();
+    public abstract String hienThiTT();
 
-    public string getHoTen() {
+    public String getHoTen() {
         return hoTen;
     }
 
-    public void setHoTen(string hoTen) {
+    public void setHoTen(String hoTen) {
         this.hoTen = hoTen;
     }
 
@@ -41,19 +41,19 @@ public abstract class caNhan {
         this.tuoi = tuoi;
     }
 
-    public string getDiaChi() {
+    public String getDiaChi() {
         return diaChi;
     }
 
-    public void setDiaChi(string diaChi) {
+    public void setDiaChi(String diaChi) {
         this.diaChi = diaChi;
     }
 
-    public string getSdt() {
+    public String getSdt() {
         return sdt;
     }
 
-    public void setSdt(string sdt) {
+    public void setSdt(String sdt) {
         this.sdt = sdt;
     }
     

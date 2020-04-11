@@ -10,34 +10,34 @@ package dauquangloc_59131309_lophoc;
  * @author quang
  */
 public class hocSinh extends caNhan{
-    private string lop;
-    private string nangKhieu;
+    private String lop;
+    private String nangKhieu;
     
     public hocSinh(){}
 
-    public hocSinh(string lop, string nangKhieu) {
+    public hocSinh(String lop, String nangKhieu) {
         this.lop = lop;
         this.nangKhieu = nangKhieu;
     }
 
-    public string getLop() {
+    public String getLop() {
         return lop;
     }
 
-    public void setLop(string lop) {
+    public void setLop(String lop) {
         this.lop = lop;
     }
 
-    public string getNangKhieu() {
+    public String getNangKhieu() {
         return nangKhieu;
     }
 
-    public void setNangKhieu(string nangKhieu) {
+    public void setNangKhieu(String nangKhieu) {
         this.nangKhieu = nangKhieu;
     }
 
     @Override
-    public string hienThiTT() {
+    public String hienThiTT() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

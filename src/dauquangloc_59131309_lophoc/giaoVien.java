@@ -10,30 +10,30 @@ package dauquangloc_59131309_lophoc;
  * @author quang
  */
 public abstract class giaoVien extends caNhan{
-    private string monDay;
-    private string toBoMon;
+    private String monDay;
+    private String toBoMon;
 
     public giaoVien() {}
     
-    public giaoVien(string monDay, string toBoMon, string hoTen, int tuoi, string diaChi, string sdt) {
+    public giaoVien(String monDay, String toBoMon, String hoTen, int tuoi, String diaChi, String sdt) {
         super(hoTen, tuoi, diaChi, sdt);
         this.monDay = monDay;
         this.toBoMon = toBoMon;
     }
 
-    public string getMonDay() {
+    public String getMonDay() {
         return monDay;
     }
 
-    public void setMonDay(string monDay) {
+    public void setMonDay(String monDay) {
         this.monDay = monDay;
     }
 
-    public string getToBoMon() {
+    public String getToBoMon() {
         return toBoMon;
     }
 
-    public void setToBoMon(string toBoMon) {
+    public void setToBoMon(String toBoMon) {
         this.toBoMon = toBoMon;
     }
     

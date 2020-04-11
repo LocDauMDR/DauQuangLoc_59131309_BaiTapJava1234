@@ -11,6 +11,6 @@ package dauquangloc_59131309_lophoc;
  */
 public interface IQLDS {
     public int them(caNhan p);
-    public int xoa(string ten);
+    public int xoa(String ten);
     public void inDS();
 }
