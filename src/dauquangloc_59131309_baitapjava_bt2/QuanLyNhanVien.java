@@ -20,7 +20,7 @@ public class QuanLyNhanVien implements IQuanLy{
 
     @Override
     public void them(nhanVien nv) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        dsNhanVien.add(nv);
     }
 
     @Override

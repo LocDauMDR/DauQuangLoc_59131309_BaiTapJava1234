@@ -16,12 +16,21 @@ public class DauQuangLoc_59131309_BaiTapJava_BT2 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        QuanLyNhanVien qlnv = new QuanLyNhanVien();
+        
         nhanVien nV1 = new nhanVien("Nguyễn Nam",25,"21 Nguyễn Tất Thành Đăk Lăk",5000000,365);
         nhanVien nV2 = new nhanVien("Nguyễn Hoàng",27,"21 Yersin Đăk Lăk",6000000,400);
-        nhanVien nV3 = new nhanVien();
+        nhanVien nV3 = new nhanVien("Hoàng Luận", 22, "22 Ymoan Đăk lăk", 3230000, 3320);
+        nhanVien nV4 = new nhanVien("Đức An", 23, "44 M'Drak Đăk Lăk", 3500000, 2350);
+        nhanVien nV5 = new nhanVien("Hào Văn", 24, "24 BMT Đăk Lăk", 3460000, 1360);
+        
         System.out.println(nV1.getThongTin());
         System.out.println(nV2.getThongTin());
-        System.out.println(nV3.getThongTin());
+        
+        qlnv.them(nV3);
+        qlnv.them(nV4);
+        qlnv.them(nV5);
+        
     }
     
 }
