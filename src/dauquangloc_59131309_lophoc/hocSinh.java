@@ -35,6 +35,11 @@ public class hocSinh extends caNhan{
     public void setNangKhieu(string nangKhieu) {
         this.nangKhieu = nangKhieu;
     }
+
+    @Override
+    public string hienThiTT() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
 }
