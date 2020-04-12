@@ -25,7 +25,9 @@ public class QuanLyNhanVien implements IQuanLy{
 
     @Override
     public void inDS() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        for(int i = 0; i < dsNhanVien.size(); i++){
+            System.out.println(' ' + dsNhanVien.get(i).getThongTin());
+        }
     }
     
 }

@@ -68,7 +68,7 @@ public class nhanVien {
     
 
     public String getThongTin() {
-        return "nhanVien{" + "ten = " + ten + ", tuoi = " + tuoi + ", diaChi = " + diaChi + ", tienLuong = " + tienLuong + ", tongSoGioLam = " + tongSoGioLam + '}';
+        return "nhanVien{" + "ten = " + ten + ", tuoi = " + tuoi + ", diaChi = " + diaChi + ", tienLuong = " + tienLuong + ", tienThuong = " + tinhThuong() + ", tongSoGioLam = " + tongSoGioLam + '}';
     }
     
     public double tinhThuong(){
