@@ -11,23 +11,53 @@ import java.util.ArrayList;
  *
  * @author quang
  */
-public abstract class QLDS implements IQLDS{
+public class QLDS implements IQLDS{
     ArrayList<caNhan> ds;
 
-    public QLDS(){}
+    public QLDS() {
+        ds = new ArrayList();
+    }
+
+    public QLDS(ArrayList<caNhan> ds) {
+        this.ds = ds;
+    }
+
+    public ArrayList<caNhan> getDs() {
+        return ds;
+    }
+
+    public void setDs(ArrayList<caNhan> ds) {
+        this.ds = ds;
+    }
+
+    
+
+    @Override
+    public int them(caNhan p) {
+        if(ds.add(p))
+            return 1;
+        return 0;
+    }
+
+    @Override
+    public int xoa(String ten) {
+        int dst = 0;
+        for(int i = 0; i < ds.size(); i++){
+            if(ds.get(i).getHoTen().equals(ten)){
+                ds.remove(i);
+                dst = 1;
+            }
+        }
+        return dst;
+    }
 
     @Override
     public void inDS() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+        int ds = this.ds.size();
+        for(int i=0; i<ds; i++){
+            this.ds.get(i).hienThiTT();
+        }
 
-    int them(hocSinh hs) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
-    int them(giaoVien gv) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
-    
+   
 }

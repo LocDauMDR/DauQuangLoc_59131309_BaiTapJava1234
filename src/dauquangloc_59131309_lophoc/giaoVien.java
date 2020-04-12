@@ -9,7 +9,7 @@ package dauquangloc_59131309_lophoc;
  *
  * @author quang
  */
-public abstract class giaoVien extends caNhan{
+public class giaoVien extends caNhan{
     private String monDay;
     private String toBoMon;
 
@@ -36,6 +36,10 @@ public abstract class giaoVien extends caNhan{
     public void setToBoMon(String toBoMon) {
         this.toBoMon = toBoMon;
     }
-    
-    
+
+    @Override
+    public String hienThiTT() {
+        return "giaoVien{"+ "HoTen = "+ getHoTen()+ "Tuoi = "+ getTuoi()+"DiaChi = "+ getDiaChi()+"SDT = "+ getSdt() + "monDay=" + monDay + ", toBoMon=" + toBoMon + '}';
+    }
+
 }

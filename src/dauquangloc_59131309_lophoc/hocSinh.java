@@ -12,10 +12,12 @@ package dauquangloc_59131309_lophoc;
 public class hocSinh extends caNhan{
     private String lop;
     private String nangKhieu;
-    
-    public hocSinh(){}
 
-    public hocSinh(String lop, String nangKhieu) {
+    public hocSinh() {
+    }
+
+    public hocSinh(String lop, String nangKhieu, String hoTen, int tuoi, String diaChi, String sdt) {
+        super(hoTen, tuoi, diaChi, sdt);
         this.lop = lop;
         this.nangKhieu = nangKhieu;
     }
@@ -35,11 +37,11 @@ public class hocSinh extends caNhan{
     public void setNangKhieu(String nangKhieu) {
         this.nangKhieu = nangKhieu;
     }
-
+    
+    
     @Override
     public String hienThiTT() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return "hocSinh{"+ "HoTen = "+ getHoTen()+ "Tuoi = "+ getTuoi()+"DiaChi = "+ getDiaChi()+"SDT = "+ getSdt() + "Lop=" + lop + ", NangKhieu=" + nangKhieu + '}';
     }
-    
     
 }
