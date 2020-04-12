@@ -18,9 +18,10 @@ public class DauQuangLoc_59131309_BaiTapJava_BT3 {
         // TODO code application logic here
         SinhVienPoly svIT = new SinhVienIT(8, 9, 10, "Nguyễn Văn Nam", "Công nghệ thông tin");
         SinhVienPoly svBiz = new SinhVienBiz(9, 10, "Hoàng Ngọc Ánh", "Marketing");
-        
+
         svIT.xuat();
         svBiz.xuat();
+      
     }
     
 }
